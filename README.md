@@ -31,6 +31,8 @@
 - React Hook Form (npm install react-hook-form)
 - React-hot-toast (npm install react-hot-toast)
 - React Icons (npm install react-icons --save)
+- Hero icons (npm install @heroicons/react)
+- JS-Cookies (npm i js-cookie)
 - Tailwind CSS
 - daisyUI
 
