@@ -1,3 +1,53 @@
+# Amazon (client-side)
+
+#### Live link
+
+`client-side` [Click here]()
+`server-side` [Click here]()
+
+#### Code link
+
+`client-side` [Click here](https://github.com/nurulcse7/next-tailwind-amazon-client)
+`server-side` [Click here](https://github.com/nurulcse7/next-tailwind-amazon-server)
+
+### Description
+
+- This project start with Next JS
+- Connect server with MongoDB Database
+- Implement CRUD operation
+- Every section completed after code push on GitHub
+
+---
+
+### Technology
+
+#### Front-end
+
+- JavaScript
+- Next.js
+- React Router Dom (npm install react-router-dom)
+- React-Context
+- React Firebase Hooks (npm install --save react-firebase-hooks)
+- React Hook Form (npm install react-hook-form)
+- React-hot-toast (npm install react-hot-toast)
+- React Icons (npm install react-icons --save)
+- Tailwind CSS
+- daisyUI
+
+#### Back-end
+
+- Node.JS
+- Express.JS
+- Middleware with Cors
+- dotenv
+- MongoDB (Atlas, Cluster)
+- JWT (JSON Web Token)
+- Deploy in Vercel (Back-end)
+
+---
+
+
+<!-- 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
@@ -32,3 +82,5 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+ -->
