@@ -49,6 +49,7 @@
 - Mongoose (npm install mongoose)
 - bcrypt.js (npm i bcryptjs)
 - NextAuth.js (npm install next-auth)
+- react-paypal-js (npm i @paypal/react-paypal-js)
 <!-- - JWT (JSON Web Token) -->
 <!-- - Deploy in Vercel (Back-end) -->
 
