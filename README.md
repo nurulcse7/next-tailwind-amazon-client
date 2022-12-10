@@ -35,7 +35,7 @@
 - Hero icons (npm install @heroicons/react)
 - JS-Cookies (npm i js-cookie)
 - Tailwind CSS
-- daisyUI
+- Headless UI (npm install @headlessui/react)
 
 #### Back-end
 
