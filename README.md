@@ -25,8 +25,8 @@
 
 - JavaScript
 - Next.js
-- React Router Dom (npm install react-router-dom)
 - React-Context
+<!-- - React Router Dom (npm install react-router-dom) -->
 - React Firebase Hooks (npm install --save react-firebase-hooks)
 - React Hook Form (npm install react-hook-form)
 - React-hot-toast (npm install react-hot-toast)
@@ -39,12 +39,15 @@
 #### Back-end
 
 - Node.JS
-- Express.JS
-- Middleware with Cors
-- dotenv
+<!-- - Express.JS -->
+<!-- - Middleware with Cors -->
+<!-- - dotenv -->
 - MongoDB (Atlas, Cluster)
-- JWT (JSON Web Token)
-- Deploy in Vercel (Back-end)
+- MongoDB (Compass)
+- Mongoose (npm install mongoose)
+- bcrypt.js (npm i bcryptjs)
+<!-- - JWT (JSON Web Token) -->
+<!-- - Deploy in Vercel (Back-end) -->
 
 ---
 
