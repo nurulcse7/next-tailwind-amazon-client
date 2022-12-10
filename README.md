@@ -34,7 +34,7 @@
 - React Icons (npm install react-icons --save)
 - Hero icons (npm install @heroicons/react)
 - JS-Cookies (npm i js-cookie)
-- Axios (npm install axios) (Fetch data from back-end)
+- Axios (Fetch data from backend) (npm i axios)
 - Tailwind CSS
 - Headless UI (npm install @headlessui/react)
 
