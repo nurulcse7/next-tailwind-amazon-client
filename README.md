@@ -29,7 +29,8 @@
 <!-- - React Router Dom (npm install react-router-dom) -->
 - React Firebase Hooks (npm install --save react-firebase-hooks)
 - React Hook Form (npm install react-hook-form)
-- React-hot-toast (npm install react-hot-toast)
+- React-Toastify (npm i react-toastify)
+<!-- - React-hot-toast (npm install react-hot-toast) -->
 - React Icons (npm install react-icons --save)
 - Hero icons (npm install @heroicons/react)
 - JS-Cookies (npm i js-cookie)
@@ -46,6 +47,7 @@
 - MongoDB (Compass)
 - Mongoose (npm install mongoose)
 - bcrypt.js (npm i bcryptjs)
+- NextAuth.js (npm install next-auth)
 <!-- - JWT (JSON Web Token) -->
 <!-- - Deploy in Vercel (Back-end) -->
 
