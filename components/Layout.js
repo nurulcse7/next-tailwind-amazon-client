@@ -8,6 +8,9 @@ import { Menu } from '@headlessui/react';
 import 'react-toastify/dist/ReactToastify.css';
 import { Store } from '../utils/Store';
 import DropdownLink from './DropdownLink';
+import { useRouter } from 'next/router';
+// import { SearchIcon } from '@heroicons/react/24/solid';
+import { FiSearch } from 'react-icons/fi';
 
 export default function Layout({ title, children }) {
   const { status, data: session } = useSession();
@@ -24,28 +27,55 @@ export default function Layout({ title, children }) {
     dispatch({ type: 'CART_RESET' });
     signOut({ callbackUrl: '/login' });
   };
+
+  const [query, setQuery] = useState('');
+
+  const router = useRouter();
+  const submitHandler = (e) => {
+    e.preventDefault();
+    router.push(`/search?query=${query}`);
+  };
+
   return (
     <>
       <Head>
-        <title>{title ? title + ' - Amazona' : 'Amazona'}</title>
-        <meta name="description" content="Ecommerce Website" />
-        <link rel="icon" href="/favicon.ico" />
+        <title>{title ? title + ' - Amazon' : 'Amazon'}</title>
+        <meta name='description' content='E-commerce Website' />
+        <link rel='icon' href='/favicon.ico' />
       </Head>
 
-      <ToastContainer position="bottom-center" limit={1} />
+      <ToastContainer position='bottom-center' limit={1} />
 
-      <div className="flex min-h-screen flex-col justify-between ">
+      <div className='flex min-h-screen flex-col justify-between '>
         <header>
-          <nav className="flex h-12 items-center px-4 justify-between shadow-md">
-            <Link href="/" legacyBehavior>
-              <a className="text-lg font-bold">amazona</a>
+          <nav className='flex h-16 items-center px-4 justify-between shadow-xl'>
+            <Link href='/' legacyBehavior>
+              <a className='text-4xl font-bold'>Amazon</a>
             </Link>
-            <div>
-              <Link href="/cart" legacyBehavior>
-                <a className="p-2">
+            <form
+              onSubmit={submitHandler}
+              className='mx-auto  hidden w-full justify-center md:flex'
+            >
+              <input
+                onChange={(e) => setQuery(e.target.value)}
+                type='text'
+                className='rounded-tr-none rounded-br-none p-2 text-base   focus:ring-0'
+                placeholder='Search products'
+              />
+              <button
+                className='rounded rounded-tl-none rounded-bl-none bg-amber-300 p-2 text-base dark:text-black'
+                type='submit'
+                id='button-addon2'
+              >
+                <FiSearch className='h-5 w-5'></FiSearch>
+              </button>
+            </form>
+            <div className='flex'>
+              <Link href='/cart' legacyBehavior>
+                <a className='p-2'>
                   Cart
                   {cartItemsCount > 0 && (
-                    <span className="ml-1 rounded-full bg-red-600 px-2 py-1 text-xs font-bold text-white">
+                    <span className='ml-1 rounded-full bg-red-600 px-2 py-1 text-xs font-bold text-white'>
                       {cartItemsCount}
                     </span>
                   )}
@@ -55,20 +85,20 @@ export default function Layout({ title, children }) {
               {status === 'loading' ? (
                 'Loading'
               ) : session?.user ? (
-                <Menu as="div" className="relative inline-block">
-                  <Menu.Button className="text-blue-600">
+                <Menu as='div' className=''>
+                  <Menu.Button className='text-blue-600'>
                     {session.user.name}
                   </Menu.Button>
-                  <Menu.Items className="absolute right-0 w-56 origin-top-right bg-white  shadow-lg ">
+                  <Menu.Items className='absolute right-0 w-56 origin-top-right bg-white  shadow-lg '>
                     <Menu.Item>
-                      <DropdownLink className="dropdown-link" href="/profile">
+                      <DropdownLink className='dropdown-link' href='/profile'>
                         Profile
                       </DropdownLink>
                     </Menu.Item>
                     <Menu.Item>
                       <DropdownLink
-                        className="dropdown-link"
-                        href="/order-history"
+                        className='dropdown-link'
+                        href='/order-history'
                       >
                         Order History
                       </DropdownLink>
@@ -76,8 +106,8 @@ export default function Layout({ title, children }) {
                     {session.user.isAdmin && (
                       <Menu.Item>
                         <DropdownLink
-                          className="dropdown-link"
-                          href="/admin/dashboard"
+                          className='dropdown-link'
+                          href='/admin/dashboard'
                         >
                           Admin Dashboard
                         </DropdownLink>
@@ -85,8 +115,8 @@ export default function Layout({ title, children }) {
                     )}
                     <Menu.Item>
                       <a
-                        className="dropdown-link"
-                        href="#"
+                        className='dropdown-link'
+                        href='#'
                         onClick={logoutClickHandler}
                       >
                         Logout
@@ -95,16 +125,16 @@ export default function Layout({ title, children }) {
                   </Menu.Items>
                 </Menu>
               ) : (
-                <Link href="/login" legacyBehavior>
-                  <a className="p-2">Login</a>
+                <Link href='/login' legacyBehavior>
+                  <a className='p-2'>Login</a>
                 </Link>
               )}
             </div>
           </nav>
         </header>
-        <main className="container m-auto mt-4 px-4">{children}</main>
-        <footer className="flex h-10 justify-center items-center shadow-inner">
-          <p>Copyright © 2022 Amazona</p>
+        <main className='container m-auto mt-4 px-4'>{children}</main>
+        <footer className='flex h-10 justify-center items-center shadow-inner'>
+          <p>Copyright © 2022 Amazon</p>
         </footer>
       </div>
     </>
