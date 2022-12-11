@@ -2,13 +2,15 @@
 
 #### Live link
 
-`client-side` [Click here]()
-`server-side` [Click here]()
+`Live website` [Click here](https://next-tailwind-amazon-client.vercel.app/)
+<!-- `client-side` [Click here]() -->
+<!-- `server-side` [Click here]() -->
 
 #### Code link
 
-`client-side` [Click here](https://github.com/nurulcse7/next-tailwind-amazon-client)
-`server-side` [Click here](https://github.com/nurulcse7/next-tailwind-amazon-server)
+`GitHub` [Click here](https://github.com/nurulcse7/next-tailwind-amazon-client)
+<!-- `client-side` [Click here]() -->
+<!-- `server-side` [Click here]() -->
 
 ### Description
 
@@ -25,8 +27,9 @@
 
 - JavaScript
 - Next.js
-- React-Context
+- Next Router 
 <!-- - React Router Dom (npm install react-router-dom) -->
+- React-Context
 - React Firebase Hooks (npm install --save react-firebase-hooks)
 - React Hook Form (npm install react-hook-form)
 - React-Toastify (npm i react-toastify)
@@ -41,9 +44,6 @@
 #### Back-end
 
 - Node.JS
-<!-- - Express.JS -->
-<!-- - Middleware with Cors -->
-<!-- - dotenv -->
 - MongoDB (Atlas, Cluster)
 - MongoDB (Compass)
 - Mongoose (npm install mongoose)
