@@ -52,7 +52,7 @@ export default function LoginScreen() {
         className='mx-auto max-w-screen-md'
         onSubmit={handleSubmit(submitHandler)}
       >
-        <h1 className='mb-4 text-xl'>Create Account</h1>
+        <h1 className='mb-4 text-2xl font-bold'>Create Account</h1>
         <div className='mb-4'>
           <label htmlFor='name'>Name</label>
           <input
@@ -133,8 +133,10 @@ export default function LoginScreen() {
           <button className='primary-button'>Register</button>
         </div>
         <div className='mb-4 '>
-          Don&apos;t have an account? &nbsp;
-          <Link href={`/register?redirect=${redirect || '/'}`}>Register</Link>
+          Already have an account?
+          <Link href='/login' legacyBehavior>
+            <a className='p-2'>Login</a>
+          </Link>
         </div>
       </form>
     </Layout>

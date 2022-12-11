@@ -71,8 +71,16 @@ export default function Layout({ title, children }) {
               </button>
             </form>
             <div className='flex'>
+              <Link href='/about' legacyBehavior>
+                <a className='p-2 text-lg'>About Us</a>
+              </Link>
+              <Link href='/blog' legacyBehavior>
+                <a className='p-2 text-lg'>Blog</a>
+              </Link>
+
+
               <Link href='/cart' legacyBehavior>
-                <a className='p-2'>
+                <a className='p-2 text-lg'>
                   Cart
                   {cartItemsCount > 0 && (
                     <span className='ml-1 rounded-full bg-red-600 px-2 py-1 text-xs font-bold text-white'>
@@ -86,7 +94,7 @@ export default function Layout({ title, children }) {
                 'Loading'
               ) : session?.user ? (
                 <Menu as='div' className=''>
-                  <Menu.Button className='text-blue-600'>
+                  <Menu.Button className='text-blue-600 mt-2 font-bold text-lg'>
                     {session.user.name}
                   </Menu.Button>
                   <Menu.Items className='absolute right-0 w-56 origin-top-right bg-white  shadow-lg '>

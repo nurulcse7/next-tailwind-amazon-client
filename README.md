@@ -1,4 +1,4 @@
-# Amazon (client-side)
+# Amazon (E-commerce website)
 
 #### Live link
 
