@@ -28,13 +28,11 @@
 - JavaScript
 - Next.js
 - Next Router 
-<!-- - React Router Dom (npm install react-router-dom) -->
+- React Responsive Carousel (npm i react-responsive-carousel)
 - React-Context
-<!-- - React Firebase Hooks (npm install --save react-firebase-hooks) -->
 - React Hook Form (npm install react-hook-form)
 - React-Toastify (npm i react-toastify)
 - react-chartjs-2 (npm install --save chart.js react-chartjs-2)
-<!-- - React-hot-toast (npm install react-hot-toast) -->
 - React Icons (npm install react-icons --save)
 - Hero icons (npm install @heroicons/react)
 - JS-Cookies (npm i js-cookie)
@@ -52,8 +50,7 @@
 - bcrypt.js (npm i bcryptjs)
 - NextAuth.js (npm install next-auth)
 - react-paypal-js (npm i @paypal/react-paypal-js)
-<!-- - JWT (JSON Web Token) -->
-<!-- - Deploy in Vercel (Back-end) -->
+- Deploy in Vercel 
 
 ---
 
