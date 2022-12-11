@@ -48,6 +48,7 @@
 - MongoDB (Atlas, Cluster)
 - MongoDB (Compass)
 - Mongoose (npm install mongoose)
+- Cloudinary (npm i cloudinary) (image and video upload Storage like a AWS ) 
 - bcrypt.js (npm i bcryptjs)
 - NextAuth.js (npm install next-auth)
 - react-paypal-js (npm i @paypal/react-paypal-js)
